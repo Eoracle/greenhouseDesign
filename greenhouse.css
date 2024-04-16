@@ -487,6 +487,7 @@
   
   #header,
   .generic-role-page,
+  #content,
   #application {
     --spacingX: clamp(6em, calc(2em + 7vw), 10em);
     --mediumFontSize: 1.25em;
@@ -517,7 +518,12 @@
         padding: 0 100px;
     } */
   }
-  
+
+  #content h1,
+  #content h2,
+  #content h3,
+  #content h4,
+  #content h5,
   .generic-role-page h1,
   .generic-role-page h2,
   .generic-role-page h3,
@@ -526,6 +532,11 @@
     margin: 2em 0 1em !important;
   }
   
+  #content h1,
+  #content h2,
+  #content h3,
+  #content h4,
+  #content h5,
   .generic-role-page h1,
   .generic-role-page h2,
   .generic-role-page h3,
@@ -544,27 +555,33 @@
     }
   }
   
+  #content ul,
   .generic-role-page ul {
     margin-inline-start: -15px;
   }
   
+  #content li ,
   .generic-role-page li {
     list-style-type: disc;
     list-style-position: outside;
     line-height: 2em;
   }
   
+  #content table,
+  #content table *,
   .generic-role-page table,
   .generic-role-page table * {
     border: none;
     text-align: start;
   }
   
+  #content table *,
   .generic-role-page table * {
     padding-right: 0.5em;
     vertical-align: top;
   }
   
+  #content table th,
   .generic-role-page table th {
     padding-bottom: 0.5em;
   }
