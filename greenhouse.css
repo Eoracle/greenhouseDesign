@@ -489,6 +489,15 @@ body {
   }
 }
 
+#apply_button::after {
+  content: "v";
+  display: inline-block;
+  font-weight: 300 !important;
+  font-size: 0.9em;
+  transform: scale(1.75, 0.75) !important;
+  margin-inline-start: 1em;
+}
+
 #header,
 .generic-role-page,
 #content,
