@@ -490,28 +490,33 @@ body {
 }
 
 #apply_button::after {
-  content: "v";
-  --transform: scale(1.75, 0.75);
+  content: "";
+  --transform: rotate(45deg);
   display: inline-block;
+  border: white solid 1px;
+  border-width: 2px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-right-radius: 3px;
+  width: 0.5em;
+  height: 0.5em;
   font-weight: 300 !important;
   font-size: 0.9em;
-  transform: var(--transform);
   margin-inline-start: 1em;
-  animation: levitate 1s infinite
+  transform: var(--transform);
+  animation: levitate infinite 1s;
 }
 
 @keyframes levitate {
   0% {
-    transform: var(--transform) translateY(0px);
-  }
-
-  50% {
-    transform: var(--transform) translateY(3px);
-  }
-
-  100% {
-    transform: var(--transform) translateY(0px);
-  }
+    transform: translateY(0px) var(--transform);
+}
+50% {
+    transform: translateY(3px) var(--transform);
+}
+100% {
+    transform: translateY(0px) var(--transform);
+}
 }
 
 #header,
