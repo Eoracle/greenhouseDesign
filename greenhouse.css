@@ -425,7 +425,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
-  padding: 13em 0 max(7vw, 5em);
+  padding: 13em 0 7em;
   margin-bottom: 9em;
 
   @media (max-width: 767px) {
@@ -433,6 +433,7 @@ body {
     text-align: center;
     margin-bottom: 5em;
     padding-top: 15vw;
+    padding-bottom: 5em;
   }
 }
 
@@ -441,7 +442,6 @@ body {
 }
 
 .app-title {
-  margin-bottom: 32px !important;
   font-size: 2.75em;
 
   @media (max-width: 768px) {
