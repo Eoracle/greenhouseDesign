@@ -509,13 +509,13 @@ body {
 
 @keyframes levitate {
   0% {
-    transform: translateY(0px) var(--transform);
+    transform: translateY(-2px) var(--transform);
 }
 50% {
-    transform: translateY(3px) var(--transform);
+    transform: translateY(2px) var(--transform);
 }
 100% {
-    transform: translateY(0px) var(--transform);
+    transform: translateY(-2px) var(--transform);
 }
 }
 
