@@ -491,11 +491,27 @@ body {
 
 #apply_button::after {
   content: "v";
+  --transform: scale(1.75, 0.75);
   display: inline-block;
   font-weight: 300 !important;
   font-size: 0.9em;
-  transform: scale(1.75, 0.75) !important;
+  transform: var(--transform);
   margin-inline-start: 1em;
+  animation: apply_button_levitate 1s infinite
+}
+
+@keyframes apply_button_levitate {
+  0% {
+    transform: var(--transform) translateY(0px);
+  }
+
+  50% {
+    transform: var(--transform) translateY(3px);
+  }
+
+  100% {
+    transform: var(--transform) translateY(0px);
+  }
 }
 
 #header,
