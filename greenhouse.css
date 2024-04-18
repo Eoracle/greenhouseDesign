@@ -362,6 +362,7 @@ html,
 body,
 #wrapper {
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 body {
