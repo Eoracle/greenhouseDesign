@@ -426,7 +426,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   padding: 13em 0 7em;
-  margin-bottom: 9em;
+  margin-bottom: 5em;
 
   @media (max-width: 767px) {
     justify-items: center;
