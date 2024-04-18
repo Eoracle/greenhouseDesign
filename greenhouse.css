@@ -497,10 +497,10 @@ body {
   font-size: 0.9em;
   transform: var(--transform);
   margin-inline-start: 1em;
-  animation: apply_button_levitate 1s infinite
+  animation: levitate 1s infinite
 }
 
-@keyframes apply_button_levitate {
+@keyframes levitate {
   0% {
     transform: var(--transform) translateY(0px);
   }
